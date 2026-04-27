@@ -62,12 +62,22 @@ export default function Post() {
     navigate("/")
   }
 
-  if (!post) return <h1>Loading...</h1>
+  if (!post) {
+  return (
+    <div>
+      <Link to="/">
+        <button className="back">← Back to Home</button>
+      </Link>
+
+      <h1>Loading...</h1>
+    </div>
+  )
+}
 
   return (
     <div>
         <Link to="/">
-        <button>Back to Home</button>
+        <button className="back">Back to Home</button>
         </Link>
 
       <h1>{post.title}</h1>

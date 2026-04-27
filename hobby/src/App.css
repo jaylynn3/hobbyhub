@@ -1,9 +1,18 @@
-
 body {
   margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
   font-family: Arial, sans-serif;
   background: #f6f7f8;
-  color: #1a1a1b;
+}
+
+#root {
+  width: 100%;
+}
+
+div {
+  padding: 20px;
+  text-align: left;
 }
 
 div {
@@ -59,4 +68,9 @@ hr {
   border: none;
   border-top: 1px solid #ddd;
   margin: 20px 0;
+}
+
+.back {
+  background: #ddd;
+  color: #333;
 }

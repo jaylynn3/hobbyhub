@@ -2,6 +2,7 @@ import { useState } from "react"
 import { supabase } from "./client"
 import { useNavigate } from "react-router-dom"
 
+
 export default function Create() {
   const navigate = useNavigate()
 
@@ -26,6 +27,10 @@ export default function Create() {
 
   return (
     <div>
+        <button type="button" className="back" onClick={() => navigate("/")}>
+        Back to Home
+        </button>
+
       <h1>Create New Post</h1>
 
       <form onSubmit={createPost}>
