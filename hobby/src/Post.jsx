@@ -80,11 +80,11 @@ export default function Post() {
         <button className="back">Back to Home</button>
         </Link>
 
-      <h1>{post.title}</h1>
-
-      <p>{post.content}</p>
-
-      {post.image && <img src={post.image} width="300" />}
+      <div className="post-content">
+        <h1>{post.title}</h1>
+        <p>{post.content}</p>
+        {post.image && <img src={post.image} width="300" />}
+      </div>
 
       <br /><br />
 
