@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import { supabase } from "./client"
 import { Link } from "react-router-dom"
+import artSpaceLogo from './assets/artspace.png';
 
 export default function Home() {
   const [posts, setPosts] = useState([])
@@ -30,7 +31,7 @@ export default function Home() {
 
   return (
     <div>
-      <h1>ArtSpace</h1>
+      <h1>Art Space</h1>
 
       <Link to="/create">
         <button>Create New Post</button>
