@@ -97,11 +97,10 @@ hr {
 }
 
 .post-content img {
-  margin-top: 20px;
-  width: 100%;
-  max-width: 500px;
-  border-radius: 12px;
+  width: 300px;
+  height: 300px;
   object-fit: cover;
+  border-radius: 12px;
 }
 
 button.back {
